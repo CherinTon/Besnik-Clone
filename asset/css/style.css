@@ -49,7 +49,7 @@ a {
     width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    max-width: calc(100% - 48px);
+    max-width: calc(100% - 135px);
     background: #fff;
 }
 body {
@@ -209,6 +209,11 @@ body {
     border-radius: 50%;
     cursor: pointer;
 }
+.home-page .play-btn:hover {
+    opacity: 0.8;
+    background: rgb(224, 222, 222);
+    transition: 0.5s, -webkit-mask-size 0.5s 0.5s;
+}
 .home-page .play-btn img {
     width: 14px;
     height: 18px;
@@ -219,7 +224,7 @@ body {
     top: 0;
     right: 0;
 }
-.home-page .right-home img {
+.home-page .right-home .course-img {
     width: 576px;
     height: 631px;
     object-fit: cover;
@@ -258,12 +263,75 @@ body {
     font-weight: 600;
     line-height: normal;
 }
-/* Schedules */
-.right-home .Schedules {
+/* schedules */
+.right-home .schedules {
     position: absolute;
-    background: #1ebfc1;
+    background: #fff;
+    bottom: 46px;
+    left: -66px;
+    width: 124px;
+    height: 132px;
+    flex-shrink: 0;
+    border-radius: 24px;
 }
-
+.schedules .title-schedules {
+    margin-top: 16px;
+    color: var(--header-color);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+.schedules .schedule-img {
+    margin: 16px 25px 42px;
+}
+.schedules .schedule-img img {
+    width: 74px;
+    height: 6px;
+    margin-bottom: 12px;
+    display: flex;
+    gap: 10px;
+}
+.schedules .schedule-icon {
+    position: absolute;
+    bottom: 23px;
+    left: 50px;
+    margin-top: 16px;
+    width: 26px;
+    height: 6px;
+    border-radius: 3px;
+}
+/* Students */
+.right-home .students {
+    position: absolute;
+    top: 40px;
+    right: 45px;
+    width: 207px;
+    height: 90px;
+    background: #fff;
+    border-radius: 24px;
+}
+.students .students-info {
+    margin: 17px 35px;
+}
+.students .students-title {
+    margin: 17px 0 0 35px;
+    color: var(--header-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: normal;
+}
+.students .students-list {
+    display: flex;
+    height: 33px;
+    margin: 8px 35px 17px;
+}
+.students .students-list li {
+    margin-left: -8px;
+}
+.students .students-list li:nth-child(1) {
+    margin-left: 0;
+}
 /* features */
 .features {
     margin: 130px auto 0 135px;
@@ -356,16 +424,18 @@ body {
     flex-shrink: 0;
     object-fit: cover;
     border-radius: 8px;
-    opacity: 0.75;
+    opacity: 0.8;
 }
 .popular .course-item li {
     position: relative;
+    height: 393px;
+}
+.popular .course-item img:hover {
+    cursor: pointer;
 }
 .popular .course-item li .course-info {
     position: absolute;
     bottom: -100px;
-    /* left: 0; */
-    /* right: 17px; */
     margin: 0 17px;
     background: #5beaec;
     width: 325px;
@@ -374,7 +444,6 @@ body {
     border-radius: 8px;
 }
 .course-info .info {
-    /* margin: 18px 0 0 25px; */
     margin-left: 25px;
     display: block;
 }
@@ -386,7 +455,7 @@ body {
     line-height: normal;
 }
 .course-item .course-info .course-fee {
-    margin-top: 20px;
+    margin-top: 16px;
     color: var(--primary-color);
     font-size: 1.6rem;
     font-weight: 400;
@@ -417,12 +486,12 @@ body {
 }
 .course-item .course-info .time,
 .course-item .course-info .qty {
-    margin: 0 10px 0 16px;
+    margin: 0 8px 0 16px;
 }
 .course-item .course-info .qty::before,
 .course-item .course-info .qty::after {
     content: "";
-    display: inline-block;
+    /* display: inline-block; */
     width: 6px;
     height: 6px;
     border-radius: 50%;
