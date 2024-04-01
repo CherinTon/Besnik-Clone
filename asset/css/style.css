@@ -54,7 +54,7 @@ a {
     max-width: calc(100% - 135px);
 }
 body {
-    width: 1440px;
+    width: 100%;
 }
 .line-clamp {
     display: -webkit-box;
@@ -105,7 +105,7 @@ body {
 /* Header Nav */
 .header {
     margin-top: var(--height-nav);
-    width: 1440px;
+    width: 100%;
     padding: 6px 0;
     background: var(--btn-color);
 }
@@ -351,13 +351,11 @@ body {
     margin-left: 0;
 }
 /* features */
+
 .features {
-    margin: 130px auto 0 135px;
-    width: 1024px;
+    margin-top: 130px;
 }
-.features .main-content {
-    margin-left: 0;
-}
+
 .popular .info-title,
 .features .info-title {
     margin: 18px 0;
@@ -547,13 +545,12 @@ body {
 
 /* feedback */
 .feedback {
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between; */
-    position: relative;
-    margin-top: 264px;
+    margin: 264px auto 0;
     height: 481px;
     flex-shrink: 0;
+}
+.feedback .body {
+    position: relative;
 }
 .feedback-left {
     display: flex;
@@ -623,10 +620,10 @@ body {
     transform: rotateY(180deg);
 }
 .feedback-right {
-    width: 54%;
     position: absolute;
     top: 0;
     right: 0;
+    width: 54%;
     height: 481px;
 }
 .feedback-right img {
@@ -640,11 +637,11 @@ body {
     right: 10px;
 }
 .feedback-right img:nth-child(2) {
-    top: 15%;
-    left: 0;
+    top: 25%;
+    left: -50px;
 }
 .feedback-right img:nth-child(3) {
-    right: 90px;
+    right: 30px;
     bottom: 10px;
 }
 .feedback-right img:nth-child(4) {
@@ -662,24 +659,23 @@ body {
 .feedback-right img:nth-child(6) {
     width: 130px;
     height: 130px;
-    top: 5%;
-    left: 30%;
+    top: 0;
+    left: 15%;
 }
 /* cta-learn */
 .cta-learn {
     margin-top: 130px;
-    width: 1440px;
+    width: 100%;
     height: 272px;
     flex-shrink: 0;
     background: #def6f5;
+}
+.cta-learn .body {
     position: relative;
 }
-
 .cta-learn .cta-ready {
-    /* padding: 76px; */
     width: 420px;
     padding-top: 76px;
-    margin-left: 135px;
 }
 
 .cta-learn p {
@@ -690,8 +686,8 @@ body {
 }
 .cta-learn .get-btn {
     position: absolute;
-    top: 40%;
-    right: 15%;
+    top: 50%;
+    right: 135px;
 }
 /* footer */
 .footer .body {
