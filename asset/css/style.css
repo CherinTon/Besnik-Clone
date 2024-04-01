@@ -138,13 +138,14 @@ body {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: -5px;
     height: 22px;
     width: 125%;
     transform: scaleX(0);
     border-bottom: 4px solid #fff;
     transform-origin: left;
 }
+
 .main-nav li:hover a::after {
     transition: 0.4s;
     transform: scale(1);
@@ -178,10 +179,16 @@ body {
     height: 631px;
     background: #fff;
 }
+/* left-home */
 .home-page .left-home {
     margin: 93px 136px 93px 0;
 
     width: 45.3%;
+}
+.home-page .slogan {
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: normal;
 }
 .home-page .title {
     margin-top: 18px;
@@ -220,9 +227,9 @@ body {
     cursor: pointer;
     transition: 0.5s, -webkit-mask-size 0.5s 0.5s;
 }
-.home-page .play-btn:hover {
+.play-btn:hover {
     opacity: 0.8;
-    background: rgb(224, 222, 222);
+    background: var(--primary-color);
     transition: 0.5s, -webkit-mask-size 0.5s 0.5s;
 }
 .home-page .play-btn img {
@@ -417,10 +424,9 @@ body {
     font-size: 1.4rem;
     line-height: normal;
     font-weight: 700;
-    text-decoration-line: underline;
 }
 .popular .info a:hover {
-    /* color: #1ebfc1; */
+    text-decoration: underline;
     opacity: 0.8;
 }
 .popular .course-item {
@@ -698,7 +704,7 @@ body {
 .footer .column .title {
     color: var(--header-color);
     font-size: 1.8;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
 }
 .footer .column ul {
@@ -711,14 +717,18 @@ body {
     color: var(--btn-color);
     text-decoration: underline;
 }
-.footer .column li a {
-    color: var(--primary-color);
+.footer .column a {
+    color: var(--text-color);
     font-size: 1.6rem;
     line-height: normal;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .footer .column .social-icon {
     margin-right: 10px;
 }
+
 .footer .footer-list img {
     width: 15px;
     height: 15px;
