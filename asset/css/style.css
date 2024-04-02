@@ -122,8 +122,9 @@ body {
 }
 .header .main-nav ul {
     display: flex;
-    gap: 39px;
+    gap: 45px;
 }
+
 .header .main-nav .active {
     font-weight: 600;
     color: #fff;
@@ -133,7 +134,9 @@ body {
     color: #2f3a3b;
     font-size: 1.6rem;
 }
-
+.header .main-nav a:hover {
+    color: #fff;
+}
 .main-nav a::after {
     content: "";
     position: absolute;
